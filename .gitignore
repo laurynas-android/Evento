@@ -1,0 +1,66 @@
+# Kotlin / Gradle
+.gradle/
+.kotlin/
+build/
+**/build/
+out/
+
+# Gradle wrapper
+!gradle/wrapper/gradle-wrapper.jar
+
+# Local config / secrets
+local.properties
+*.env
+secrets.properties
+
+# IDE - IntelliJ / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Kotlin Native / KMP
+.konan/
+
+# Kotlin/JS + Kotlin/Wasm (webApp)
+kotlin-js-store/*
+!kotlin-js-store/yarn.lock
+!kotlin-js-store/wasm/yarn.lock
+node_modules/
+
+# Xcode / iOS
+xcuserdata/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.xcuserstate
+Pods/
+
+# Fastlane (if used)
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# macOS
+.DS_Store
+
+# Logs
+*.log

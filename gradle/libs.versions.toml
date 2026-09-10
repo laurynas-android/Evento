@@ -1,0 +1,66 @@
+[versions]
+android-compileSdk = "37"
+android-minSdk = "28"
+android-targetSdk = "37"
+agp = "9.3.2"
+coreKtx = "1.19.0"
+activityCompose = "1.13.0"
+kotlin = "2.4.20"
+compose-multiplatform = "1.12.0"
+compose-material3 = "1.9.0"
+material-icons = "1.7.3"
+ktor = "3.5.2"
+metro = "1.4.3"
+googleDevtoolsKsp = "2.3.5"
+jetbrainsKotlinPluginSerialization = "2.4.20"
+kotlinxSerializationCore = "1.11.0"
+navigation3 = "1.1.1"
+lifecycle-navigation3 = "2.11.0"
+adaptiveNavigation3 = "1.3.0-beta02"
+adaptive = "1.3.0-beta02"
+adaptiveLayout = "1.3.0-beta02"
+kotlinxCoroutinesAndroid = "1.11.0"
+kotlinxCoroutinesCore = "1.11.0"
+timber = "5.0.1"
+
+[libraries]
+# KMP
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+kotlinx-serialization-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-core", version.ref = "kotlinxSerializationCore" }
+androidx-navigation3-ui = { group = "org.jetbrains.androidx.navigation3", name = "navigation3-ui", version.ref = "navigation3" }
+androidx-compose-adaptive = { group = "org.jetbrains.compose.material3.adaptive", name = "adaptive", version.ref = "adaptive" }
+androidx-compose-adaptive-layout = { group = "org.jetbrains.compose.material3.adaptive", name = "adaptive-layout", version.ref = "adaptiveLayout" }
+androidx-compose-adaptive-navigation3 = { group = "org.jetbrains.compose.material3.adaptive", name = "adaptive-navigation3", version.ref = "adaptiveNavigation3" }
+androidx-lifecycle-viewmodel-navigation3 = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-viewmodel-navigation3", version.ref = "lifecycle-navigation3" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktor-client-okhttp = { group = "io.ktor", name = "ktor-client-okhttp", version.ref = "ktor" }
+ktor-client-darwin = { group = "io.ktor", name = "ktor-client-darwin", version.ref = "ktor" }
+ktor-client-content-negotiation = { group = "io.ktor", name = "ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktor" }
+metro-runtime = { group = "dev.zacsweers.metro", name = "runtime", version.ref = "metro" }
+androidx-compose-material-icons-extended = { group = "org.jetbrains.compose.material", name = "material-icons-extended", version.ref = "material-icons" }
+compose-uiTooling = { module = "org.jetbrains.compose.ui:ui-tooling", version.ref = "compose-multiplatform" }
+compose-uiToolingPreview = { module = "org.jetbrains.compose.ui:ui-tooling-preview", version.ref = "compose-multiplatform" }
+compose-runtime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "compose-multiplatform" }
+compose-foundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "compose-multiplatform" }
+compose-ui = { module = "org.jetbrains.compose.ui:ui", version.ref = "compose-multiplatform" }
+compose-components-resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "compose-multiplatform" }
+compose-material3 = { module = "org.jetbrains.compose.material3:material3", version.ref = "compose-material3" }
+
+# Android
+android-timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+# iOS
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+jetbrains-compose = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+metro = { id = "dev.zacsweers.metro", version.ref = "metro" }
+google-devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "googleDevtoolsKsp" }
+jetbrains-kotlin-plugin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "jetbrainsKotlinPluginSerialization" }
+android-kotlin-multiplatform-library = { id = "com.android.kotlin.multiplatform.library" }
+
